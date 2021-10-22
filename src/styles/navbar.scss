@@ -1,0 +1,86 @@
+@import "./typography.css";
+$font-stack: Poppins,
+sans-serif;
+$light-grey: rgba(92, 92, 92, 0.933);
+
+nav {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    width          : '100%';
+    padding-left   : 60px;
+    padding-right  : 60px;
+    padding-top    : 10px;
+    padding-bottom : 10px;
+}
+
+.mobile-menu {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    padding-left   : 20px;
+    padding-right  : 20px;
+    padding-top    : 10px;
+    padding-bottom : 10px;
+}
+
+.drop-menu-wrapper {
+    position           : fixed;
+    z-index            : 99;
+    // right           : 1px;
+    float              : right;
+    background-color   : #24242470;
+    height             : 100vh;
+    width              : 100vw;
+}
+
+.drop-menu-container {
+    background-color: #000;
+    height          : 100vh;
+    float           : right;
+    width           : 60%;
+    padding         : 20px
+}
+
+.menu-item {
+    padding-top   : 10px;
+    padding-bottom: 10px
+}
+
+.links-container {
+    display: flex;
+    min-width: 250px;
+    justify-content: space-evenly;
+    
+    
+    // gap: 20px;
+}
+
+@media (max-width: 900px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+a {
+    font-family       : $font-stack;
+    color             : $light-grey;
+    // margin-right   : 60px;
+    text-decoration   : none;
+    font-size         : 14px;
+}
+
+a:hover {
+    color: #000
+}
+
+
+
+

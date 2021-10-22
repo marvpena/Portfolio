@@ -8,6 +8,18 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+      {
+        resolve: "gatsby-plugin-page-progress",
+        options: {
+          // includePaths: ["/", { regex: "^/blog" }],
+          // excludePaths: ["/blog/beep-beep-lettuce"],
+          height: 3,
+          prependToBody: false,
+          color: `#000`,
+          footerHeight: 500,
+          headerHeight: 0,
+        },
+      },
     {
       resolve: "gatsby-source-filesystem",
       options: {

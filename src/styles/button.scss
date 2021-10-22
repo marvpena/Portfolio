@@ -1,0 +1,11 @@
+@import "./typography.css";
+$font-stack: Poppins,
+sans-serif;
+
+
+
+.tag-text {
+  
+    font-family: $font-stack;
+    font-size  : 14px;
+}
